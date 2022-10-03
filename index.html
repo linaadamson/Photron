@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Photron</title>
+
+    <!-- TYPOGRAPHY LINK -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS LINK -->
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul class="nav-bar">
+          <li id="logo">
+            <a class="logo-a" href="./index.html">
+              <p class="logo-letter">P</p>
+              <p class="logo-word">Photron</p>
+            </a>
+          </li>
+
+          <li class="nav-search">
+            <form class="search-form nav-search-form">
+              <input
+                type="text"
+                name="search"
+                class="search-input"
+                placeholder="Search"
+                autocomplete="off"
+              />
+              <button type="submit">
+                <div class="submit-btn">Explore</div>
+              </button>
+            </form>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="hero-section">
+      <div class="hero-section-text">
+        <h2 class="hero-title">Free stock photos</h2>
+        <p>
+          Discover the best collection of photographs in the world, all free to
+          use for any purpose.
+        </p>
+        <form class="search-form hero-search-form">
+          <input
+            type="text"
+            name="search"
+            class="search-input"
+            placeholder="Search"
+            autocomplete="off"
+          />
+          <button type="submit">
+            <div class="submit-btn">Explore</div>
+          </button>
+        </form>
+      </div>
+
+      <div class="hero-section-image">
+        <img src="./assets/Union.png" alt="" />
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <main id="explore">
+      <div class="gallery"></div>
+    </main>
+
+    <div class="more-button">
+      <button class="more">
+        <span class="more-span">See More</span>
+        <svg viewBox="0 0 13 10" height="10px" width="15px">
+          <path d="M1,5 L11,5"></path>
+          <polyline points="8 1 12 5 8 9"></polyline>
+        </svg>
+      </button>
+    </div>
+
+    <!-- GSAP -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"
+      integrity="sha512-Mf/xUqfWvDIr+1B6zfnIDIiG7XHzyP/guXUWgV6PgaQoIFeXkJQR5XWh9fqAiCiRCpemabt3naV4jhDWVnuYDQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- SCROLL TRIGGER -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"
+      integrity="sha512-Q+G390ZU2qKo+e4q+kVcJknwfGjKJOdyu5mVMcR95NqL6XaF4lY4nsSvIVB3NDP54ACsS9rqhE1DVqgpApl//Q=="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- JAVASCRIPT -->
+    <script src="./config.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
